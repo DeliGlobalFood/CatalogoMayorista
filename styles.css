@@ -40,7 +40,15 @@ header::before {
     z-index: 1;
 }
 
-/* Contenedor para los logos y texto */
+.header-contact {
+    background-color: #0044cc; /* Fondo azul para destacar */
+    color: #ffffff; /* Texto en blanco */
+    text-align: center;
+    padding: 10px 0; /* Espaciado para el texto */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    font-weight: bold; /* Negrita para dar énfasis */
+}
+
 header .content {
     position: absolute;
     bottom: 20px;
