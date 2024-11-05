@@ -190,26 +190,6 @@ button:hover {
         font-size: 2.5em;
     }
 }
-/* Estilos para la sección de precios */
-.pricing {
-    margin-top: 10px;
-    padding: 15px;
-    background-color: #0044cc; /* Fondo azul del logo */
-    color: #ffffff; /* Texto en blanco */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
-    font-size: 1em;
-}
-
-.pricing p {
-    margin: 5px 0;
-    font-weight: bold; /* Texto en negrita para destacar */
-    font-size: 1.1em; /* Aumentar tamaño de letra */
-}
-
-.pricing p strong {
-    color: #FFD700; /* Color dorado para palabras clave (como Precio) */
-}
 
 .whatsapp-btn {
     background-color: #25D366; /* Color verde de WhatsApp */
@@ -230,4 +210,24 @@ button:hover {
 
 a {
     text-decoration: none; /* Para que no subraye el texto del enlace */
+}
+/* Estilos para la sección de precios */
+.pricing {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #0044cc; /* Fondo azul del logo */
+    color: #ffffff; /* Texto en blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    font-size: 1em;
+}
+
+.pricing p {
+    margin: 5px 0;
+    font-weight: bold; /* Texto en negrita para destacar */
+    font-size: 1.1em; /* Aumentar tamaño de letra */
+}
+
+.pricing p strong {
+    color: #FFD700; /* Color dorado para palabras clave (como Precio) */
 }
