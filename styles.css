@@ -17,6 +17,16 @@ body {
     
 }
 
+/* Contenedor para la información de contacto */
+.header-contact {
+    background-color: #0044cc; /* Fondo azul para destacar */
+    color: #ffffff; /* Texto en blanco */
+    text-align: center;
+    padding: 10px 0; /* Espaciado para el texto */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    font-weight: bold; /* Negrita para dar énfasis */
+}
+
 /* Estilos del header */
 header {
     position: relative;
@@ -25,7 +35,8 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #ffffff; /* Texto blanco para mejor contraste */
+    color: #ffffff;
+    margin-top: 10px; /* Separación entre la información de contacto y el contenido principal */
 }
 
 /* Capa oscura sobre la imagen para mejorar legibilidad */
@@ -36,25 +47,38 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar el contraste */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
-.header-contact {
-    background-color: #0044cc; /* Fondo azul para destacar */
-    color: #ffffff; /* Texto en blanco */
-    text-align: center;
-    padding: 10px 0; /* Espaciado para el texto */
-    font-size: 0.9em; /* Tamaño de fuente más pequeño */
-    font-weight: bold; /* Negrita para dar énfasis */
-}
-
+/* Contenedor para los logos y texto */
 header .content {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
-    z-index: 2; /* Por encima de la capa oscura */
+    z-index: 2;
+    color: #ffffff;
+}
+
+/* Fondo o sombra detrás de los logos para mejorar el contraste */
+.logo-wrapper {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Logo principal de Deli Global Food */
+.logo-primary {
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Logo secundario de la empresa aliada */
+.logo-secondary {
+    width: 80px;
+    opacity: 0.7;
 }
 
 /* Fondo o sombra detrás de los logos para mejorar el contraste */
