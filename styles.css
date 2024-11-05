@@ -190,6 +190,16 @@ button:hover {
         font-size: 2.5em;
     }
 }
+/* Estilos para la sección de precios */
+.pricing {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333333;
+}
+
+.pricing p {
+    margin: 5px 0;
+}
 .whatsapp-btn {
     background-color: #25D366; /* Color verde de WhatsApp */
     color: #ffffff;
