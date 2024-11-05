@@ -225,7 +225,7 @@ a {
 .pricing p {
     margin: 5px 0;
     font-weight: bold; /* Texto en negrita para destacar */
-    font-size: 1.1em; /* Aumentar tamaño de letra */
+    font-size: 1.5em; /* Aumentar tamaño de letra */
 }
 
 .pricing p strong {
