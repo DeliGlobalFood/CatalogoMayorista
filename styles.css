@@ -60,6 +60,11 @@ header .content {
     color: #ffffff;
 }
 
+header content .column-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Fondo o sombra detrás de los logos para mejorar el contraste */
 .logo-wrapper {
     display: inline-block;
@@ -72,11 +77,6 @@ header .content {
 .logo-primary {
     width: 150px;
     margin-right: 20px;
-}
-
-.column-container {
-    display: flex;
-    flex-direction: column;
 }
 
 /* Logo secundario de la empresa aliada */
