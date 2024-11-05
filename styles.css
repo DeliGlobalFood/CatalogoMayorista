@@ -60,7 +60,7 @@ header .content {
     color: #ffffff;
 }
 
-header content .column-container {
+header .content .column-container {
     display: flex;
     flex-direction: column;
 }
