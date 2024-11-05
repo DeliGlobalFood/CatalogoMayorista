@@ -74,6 +74,11 @@ header .content {
     margin-right: 20px;
 }
 
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Logo secundario de la empresa aliada */
 .logo-secondary {
     width: 80px;
