@@ -212,6 +212,14 @@ a {
     color: #FFD700; /* Color dorado para palabras clave (como Precio) */
 
 /* Ajustes de estilo para el pie de página */
+    footer {
+    background-color: #003366; /* Fondo azul oscuro */
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
