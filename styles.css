@@ -19,9 +19,10 @@ body {
 
 /* Estilos generales para el encabezado */
 header {
-    background-color: #f8f9fa; /* Color de fondo suave */
+    background-color: #003366; /* Fondo azul oscuro que combine con el logo */
     padding: 20px;
-    text-align: center; /* Centrar todo el contenido */
+    text-align: center;
+    color: white; /* Color blanco para contraste */
 }
 
 /* Contenedor de logos */
@@ -29,12 +30,13 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Espacio entre logos */
+    gap: 10px;
 }
 
 /* Logo principal y secundario */
 .logo-primary {
     max-width: 200px;
+    margin-bottom: 10px;
 }
 
 .logo-secondary {
@@ -43,30 +45,33 @@ header {
 
 /* Título y lema */
 .header-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar legibilidad */
     margin-top: 10px;
 }
 
 .header-slogan {
-    font-size: 16px;
-    color: #555;
-    margin: 5px 0;
+    font-size: 18px;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin: 5px 0 15px 0;
 }
 
 /* Información de contacto */
 .header-contact {
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     margin-top: 15px;
 }
 
-/* Aumentar espacio y fuente de los contactos */
 .header-contact p {
     margin: 5px 0;
     font-weight: bold;
 }
+
 
 
 /* Fondo o sombra detrás de los logos para mejorar el contraste */
