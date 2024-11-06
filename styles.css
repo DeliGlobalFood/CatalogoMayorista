@@ -275,11 +275,5 @@ a {
     color: #ffffff;
 }
 
-@media (max-width: 600px) {
-    .footer-social-icons img {
-        width: 20px;
-        height: 20px;
-    }
-}
 
 
