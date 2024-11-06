@@ -26,10 +26,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff; /* Texto blanco para mejor contraste */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 /* Capa oscura sobre la imagen para mejorar legibilidad */
@@ -46,52 +42,12 @@ header::before {
 
 /* Contenedor para los logos y texto */
 header .content {
-    position: relative;
-    z-index: 2; /* Por encima de la capa oscura */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
     text-align: center;
+    z-index: 2; /* Por encima de la capa oscura */
 }
-
-/* Fondo o sombra detrás de los logos para mejorar el contraste */
-.logo-wrapper {
-    display: block;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
-    padding: 10px;
-    border-radius: 8px; /* Borde redondeado para darle estilo */
-    margin-bottom: 10px; /* Espacio entre logos */
-}
-
-/* Logo principal de Deli Global Food */
-.logo-primary {
-    width: 150px; /* Tamaño del logo principal */
-}
-
-/* Logo secundario de la empresa aliada */
-.logo-secondary {
-    width: 80px; /* Tamaño más pequeño para el logo secundario */
-    opacity: 0.7; /* Menos prominente */
-}
-
-/* Texto del título */
-header h1 {
-    margin-top: 15px;
-    font-size: 2.5em;
-    color: #ffffff;
-}
-
-/* Lema o subtítulo */
-header p {
-    font-size: 1.2em;
-    color: #ffffff;
-    line-height: 1.5;
-}
-
-
-
-
-
 
 /* Fondo o sombra detrás de los logos para mejorar el contraste */
 .logo-wrapper {
@@ -234,7 +190,16 @@ button:hover {
         font-size: 2.5em;
     }
 }
+/* Estilos para la sección de precios */
+.pricing {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333333;
+}
 
+.pricing p {
+    margin: 5px 0;
+}
 .whatsapp-btn {
     background-color: #25D366; /* Color verde de WhatsApp */
     color: #ffffff;
