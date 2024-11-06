@@ -124,44 +124,14 @@ header p {
     color: #000000; /* Texto negro para mejor contraste */
 }
 
-.product .code {
-    font-size: 0.8em;
-    color: #555555; /* Gris oscuro */
-}
-
 .product:hover {
     border-color: #e74c3c; /* Resalta en rojo al pasar el mouse */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #ffffff;
-    border-top: 4px solid #0044cc; /* Azul del logo */
+
 }
 
-footer p {
-    font-size: 0.8em;
-    color: #333333; /* Texto más oscuro para legibilidad */
-}
-
-/* Botones - Si decides agregar botones para acciones futuras */
-button {
-    background-color: #0044cc; /* Azul del logo */
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e74c3c; /* Rojo en hover */
-}
 
 /* Media Queries para pantallas más grandes (tablets y computadoras) */
 @media (min-width: 600px) {
@@ -289,8 +259,8 @@ footer {
 }
 
 .footer-social-icons img {
-    width: 30px;  /* Ajusta el tamaño de los iconos */
-    height: 30px;
+    width: 15px;  /* Ajusta el tamaño de los iconos */
+    height: 15px;
     transition: transform 0.3s ease; /* Efecto al pasar el mouse */
 }
 
