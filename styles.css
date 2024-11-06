@@ -212,7 +212,7 @@ a {
     color: #FFD700; /* Color dorado para palabras clave (como Precio) */
 
 /* Ajustes de estilo para el pie de página */
-footer {
+.footer {
     background-color: #003366; /* Fondo azul oscuro */
     color: #ffffff;
     padding: 20px;
