@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -304,5 +304,4 @@ footer {
     margin-top: 10px;
     font-size: 0.8em;
     color: #ffffff;
-}
-
+} 
