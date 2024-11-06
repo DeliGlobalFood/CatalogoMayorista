@@ -268,55 +268,49 @@ a {
 .pricing p strong {
     color: #FFD700; /* Color dorado para palabras clave (como Precio) */
 }
-.footer {
-    background-color: #0044cc;
-    background-image: url('images/footer-background.png'); /* Fondo de imagen tenue */
-    background-size: cover;
+/* Pie de página estilizado */
+footer {
+    background-color: #0044cc; /* Azul del logo */
     color: #ffffff;
-    padding: 20px 0;
+    padding: 40px 20px;
+    font-size: 1.1em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    padding: 10px;
+footer .footer-section {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
 }
 
-.footer h4 {
+footer .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    color: #ffdd57; /* Un color claro que resalte sobre el azul */
 }
 
-.footer p, .footer a {
-    font-size: 0.9em;
+footer .footer-section p, footer .footer-section a {
     color: #ffffff;
+    margin: 5px 0;
     text-decoration: none;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+footer .footer-section a:hover {
+    color: #ffdd57;
 }
 
-.footer img {
-    width: 24px;
-    height: 24px;
-    margin: 0 8px;
-    vertical-align: middle;
-    transition: transform 0.3s ease;
+footer .social-media a {
+    font-size: 1.5em;
+    margin-right: 15px;
 }
 
-.footer img:hover {
-    transform: scale(1.2);
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    color: #ffffff;
 }
 
-/* Responsive para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        align-items: center;
-    }
-}
