@@ -268,76 +268,55 @@ a {
 .pricing p strong {
     color: #FFD700; /* Color dorado para palabras clave (como Precio) */
 }
-* Estilos para el pie de página */
-footer {
-    background-image: url('images/footer-background.jpg'); /* Imagen de fondo */
+.footer {
+    background-color: #0044cc;
+    background-image: url('images/footer-background.png'); /* Fondo de imagen tenue */
     background-size: cover;
-    background-position: center;
     color: #ffffff;
-    padding: 30px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
-.footer-contact {
-    background-color: rgba(0, 68, 204, 0.8); /* Color azul translúcido */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.footer-contact h3 {
-    margin-bottom: 15px;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.footer-contact table {
-    width: 100%;
-    margin: 10px 0;
-    border-collapse: collapse;
-    color: #ffffff;
-}
-
-.footer-contact th, .footer-contact td {
+.footer-section {
+    flex: 1;
+    min-width: 200px;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordes claros y translúcidos */
-    text-align: left;
 }
 
-.footer-contact th {
-    background-color: rgba(255, 255, 255, 0.1); /* Encabezado translúcido */
-    font-weight: bold;
-    border-radius: 8px;
+.footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-.footer-contact td {
-    background-color: rgba(255, 255, 255, 0.05); /* Fondo translúcido */
-    border-radius: 8px;
+.footer p, .footer a {
+    font-size: 0.9em;
+    color: #ffffff;
+    text-decoration: none;
 }
 
-/* Estilos para los íconos de redes sociales */
-.social-links {
-    margin-top: 20px;
+.footer a:hover {
+    text-decoration: underline;
 }
 
-.social-links a {
-    margin: 0 10px;
-    display: inline-block;
+.footer img {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
 }
 
-.social-links img {
-    width: 36px; /* Tamaño de los íconos */
-    height: 36px;
-    opacity: 0.8;
-    transition: transform 0.3s, opacity 0.3s;
+.footer img:hover {
+    transform: scale(1.2);
 }
 
-.social-links img:hover {
-    transform: scale(1.1); /* Aumento de tamaño al pasar el cursor */
-    opacity: 1;
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
