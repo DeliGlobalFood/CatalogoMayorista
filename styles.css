@@ -280,21 +280,24 @@ footer {
     text-decoration: underline;
 }
 
+/* Ajustes para los enlaces de redes sociales */
 .footer-social-icons {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     margin-top: 10px;
 }
 
-.footer-social-icons a {
-    color: #ffffff;
-    font-size: 1.5em;
+.footer-social-icons img {
+    width: 30px;  /* Ajusta el tamaño de los iconos */
+    height: 30px;
+    transition: transform 0.3s ease; /* Efecto al pasar el mouse */
 }
 
-.footer-social-icons a:hover {
-    color: #FFD700;
+.footer-social-icons a:hover img {
+    transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
 }
+
 
 /* Ajuste del copyright */
 .footer-copyright {
