@@ -287,39 +287,45 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-footer .footer-section {
-    flex: 1 1 200px;
-    margin-bottom: 20px;
+/* Estilos para el pie de página */
+footer {
+    background-color: #003366; /* Azul plano del pie de página */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
 }
 
-footer .footer-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #ffdd57; /* Un color claro que resalte sobre el azul */
-}
-
-footer .footer-section p, footer .footer-section a {
-    color: #ffffff;
-    margin: 5px 0;
-    text-decoration: none;
-}
-
-footer .footer-section a:hover {
-    color: #ffdd57;
-}
-
-footer .social-media a {
-    font-size: 1.5em;
-    margin-right: 15px;
-}
-
-.footer-bottom {
+.footer-contact, .footer-social {
+    font-size: 14px; /* Tamaño de fuente para el texto */
     text-align: center;
-    font-size: 0.9em;
-    margin-top: 20px;
-    border-top: 1px solid #ffffff;
-    padding-top: 10px;
-    color: #ffffff;
+    margin: 5px 0;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+}
+
+.footer-social-icons img {
+    width: 100%;
+    height: auto;
+}
+
+/* Derechos de autor */
+.footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #cccccc;
+    margin-top: 10px;
 }
 
