@@ -17,83 +17,81 @@ body {
     
 }
 
-/* Estilos generales para el encabezado */
+/* Estilos del header */
 header {
-    background-color: #003366; /* Fondo azul oscuro que combine con el logo */
-    padding: 20px;
+    position: relative;
+    height: 300px; /* Ajusta la altura según la imagen */
+    background-image: url('images/header-background.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Texto blanco para mejor contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: white; /* Color blanco para contraste */
 }
 
-/* Contenedor de logos */
-.logo-container {
+/* Capa oscura sobre la imagen para mejorar legibilidad */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar el contraste */
+    z-index: 1;
+}
+
+/* Contenedor para los logos y texto */
+header .content {
+    position: relative;
+    z-index: 2; /* Por encima de la capa oscura */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    text-align: center;
 }
-
-/* Logo principal y secundario */
-.logo-primary {
-    max-width: 200px;
-    margin-bottom: 10px;
-}
-
-.logo-secondary {
-    max-width: 150px;
-}
-
-/* Título y lema */
-.header-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar legibilidad */
-    margin-top: 10px;
-}
-
-.header-slogan {
-    font-size: 18px;
-    color: #f0f0f0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    margin: 5px 0 15px 0;
-}
-
-/* Información de contacto */
-.header-contact {
-    font-size: 16px;
-    color: #ffffff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 15px;
-}
-
-.header-contact p {
-    margin: 5px 0;
-    font-weight: bold;
-}
-
-
 
 /* Fondo o sombra detrás de los logos para mejorar el contraste */
 .logo-wrapper {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
     padding: 10px;
-    border-radius: 8px;
-    width: 100px;
+    border-radius: 8px; /* Borde redondeado para darle estilo */
+    margin-bottom: 10px; /* Espacio entre logos */
 }
 
 /* Logo principal de Deli Global Food */
 .logo-primary {
-    width: 150px;
-    margin-right: 20px;
+    width: 150px; /* Tamaño del logo principal */
 }
 
 /* Logo secundario de la empresa aliada */
 .logo-secondary {
-    width: 80px;
-    opacity: 0.7;
+    width: 80px; /* Tamaño más pequeño para el logo secundario */
+    opacity: 0.7; /* Menos prominente */
 }
+
+/* Texto del título */
+header h1 {
+    margin-top: 15px;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+/* Lema o subtítulo */
+header p {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+
+
+
+
 
 /* Fondo o sombra detrás de los logos para mejorar el contraste */
 .logo-wrapper {
