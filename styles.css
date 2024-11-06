@@ -17,70 +17,56 @@ body {
     
 }
 
-/* Estilos del header */
+/* Encabezado */
 header {
     position: relative;
-    height: 300px; /* Ajusta la altura según la imagen */
-    background-image: url('images/header-background.png'); /* Imagen de fondo */
+    height: auto; /* Ajuste automático para adaptarse al contenido */
+    padding: 20px; /* Espacio interno */
+    background-image: url('images/header-background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff; /* Texto blanco para mejor contraste */
-}
-
-/* Capa oscura sobre la imagen para mejorar legibilidad */
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar el contraste */
-    z-index: 1;
-}
-
-/* Contenedor para los logos y texto */
-header .content {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
+    color: #ffffff;
     text-align: center;
-    z-index: 2; /* Por encima de la capa oscura */
 }
 
-/* Fondo o sombra detrás de los logos para mejorar el contraste */
+/* Contenedor de logos y texto */
+header .content {
+    display: flex;
+    flex-direction: column; /* Apila logos y texto */
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+/* Logos */
 .logo-wrapper {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
-    padding: 10px;
-    border-radius: 8px; /* Borde redondeado para darle estilo */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 8px;
 }
 
-/* Logo principal de Deli Global Food */
 .logo-primary {
-    width: 150px; /* Aumentar tamaño del logo principal */
-    margin-right: 20px;
+    width: 120px; /* Ajuste del tamaño */
+    margin-bottom: 10px;
 }
 
-/* Logo secundario de la empresa aliada */
 .logo-secondary {
-    width: 80px; /* Tamaño más pequeño para el logo secundario */
-    opacity: 0.7; /* Menos prominente */
+    width: 80px;
+    opacity: 0.8;
 }
 
-/* Texto del título */
+/* Título y lema */
 header h1 {
-    margin-top: 15px;
-    font-size: 2.5em;
-    color: #ffffff;
+    font-size: 1.8em;
+    margin-top: 10px;
 }
 
-/* Lema o subtítulo */
 header p {
-    font-size: 1.2em;
-    color: #ffffff;
+    font-size: 1em;
+    max-width: 80%; /* Limita el ancho para evitar que se corte */
 }
+
 
 
 .catalog {
@@ -162,32 +148,31 @@ button:hover {
     background-color: #e74c3c; /* Rojo en hover */
 }
 
-/* Media Queries para pantallas más grandes (tablets y computadoras) */
 @media (min-width: 600px) {
-    .catalog {
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    header h1 {
+        font-size: 2.2em;
     }
 
-    .logo {
-        width: 100px;
-    }
-
-    h1 {
-        font-size: 2em;
+    header p {
+        font-size: 1.2em;
     }
 }
 
 @media (min-width: 1024px) {
-    .catalog {
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    header {
+        height: 350px;
     }
 
-    .logo {
-        width: 120px;
-    }
-
-    h1 {
+    header h1 {
         font-size: 2.5em;
+    }
+
+    .logo-primary {
+        width: 150px;
+    }
+
+    .logo-secondary {
+        width: 100px;
     }
 }
 /* Estilos para la sección de precios */
@@ -250,45 +235,43 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* Estilos para el pie de página */
+/* Pie de página */
 footer {
-    background-color: #003366; /* Azul plano del pie de página */
-    color: white;
+    background-color: #003366;
+    color: #ffffff;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
-}
-
-.footer-contact, .footer-social {
-    font-size: 14px; /* Tamaño de fuente para el texto */
     text-align: center;
-    margin: 5px 0;
 }
 
-.footer-social-icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+/* Secciones del pie de página */
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    color: #FFD700; /* Color dorado */
 }
 
 .footer-social-icons a {
     display: inline-block;
-    width: 24px; /* Tamaño del icono */
-    height: 24px;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
 }
 
-.footer-social-icons img {
-    width: 100%;
-    height: auto;
-}
+/* Media Queries para el pie de página */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
 
-/* Derechos de autor */
-.footer-copyright {
-    text-align: center;
-    font-size: 12px;
-    color: #cccccc;
-    margin-top: 10px;
+    .footer-section {
+        margin: 0 20px;
+    }
 }
-
