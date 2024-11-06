@@ -240,50 +240,63 @@ a {
 
 .pricing p strong {
     color: #FFD700; /* Color dorado para palabras clave (como Precio) */
-}
-/* Pie de página estilizado */
+
 footer {
-    background-color: #0044cc; /* Azul del logo */
+    background-color: #003366; /* Azul oscuro */
     color: #ffffff;
     padding: 40px 20px;
-    font-size: 1.1em;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-/* Estilos para el pie de página */
-footer {
-    background-color: #003366; /* Azul plano del pie de página */
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
-}
-
-.footer-contact, .footer-social {
-    font-size: 14px; /* Tamaño de fuente para el texto */
     text-align: center;
-    margin: 5px 0;
 }
 
-.footer-social-icons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+.footer-section {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    color: #FFD700; /* Color dorado para resaltar los títulos */
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: #ffffff; /* Blanco para mejor contraste */
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-section a:hover {
+    color: #FFD700; /* Color dorado en hover */
+    text-decoration: underline;
 }
 
 .footer-social-icons a {
     display: inline-block;
-    width: 24px; /* Tamaño del icono */
-    height: 24px;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
 }
 
-.footer-social-icons img {
-    width: 100%;
-    height: auto;
+.footer-social-icons a:hover {
+    color: #FFD700;
 }
+
+/* Media Queries para el pie de página */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        margin: 0 20px;
+    }
+}
+
 
 /* Derechos de autor */
 .footer-copyright {
